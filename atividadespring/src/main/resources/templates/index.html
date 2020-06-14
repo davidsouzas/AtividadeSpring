@@ -7,7 +7,11 @@
 <body>
 <div align="center">
     <h1>Filmes</h1>
-    <table border="1">
+
+    <a href="new">Inserir Novo Filme</a>
+    <br/>
+
+    <table border="1" cellpadding="10">
         <thead>
             <tr>
                 <th>Titulo</th>
@@ -28,12 +32,12 @@
                 <td th:text="${filme.titulo}">Titulo</td>
                 <td th:text="${filme.descricao}">Descrição</td>
                 <td th:text="${filme.ano_de_lancamento}">Ano de Lançamento</td>
-                <td th:text="${filme.idioma}">Idioma</td>
-                <td th:text="${filme.descricao}">Descrição</td>
-                <td th:text="${filme.descricao}">Descrição</td>
-                <td th:text="${filme.descricao}">Descrição</td>
-                <td th:text="${filme.descricao}">Descrição</td>
-                <td th:text="${filme.descricao}">Descrição</td>
+                <td th:text="${filme.idioma_id}">Idioma</td>
+                <td th:text="${filme.duracao_do_filme}">Duração do Filme</td>
+                <td th:text="${filme.preco_da_locacao}">Preço de Locação</td>
+                <td th:text="${filme.custo_de_substituicao}">Custo de Substituição</td>
+                <td th:text="${filme.classificacao}">Classficação</td>
+                <td th:text="${filme.ultima_atualizacao}">Ultima Atualização</td>
                 <d></d>
             </tr>
         </tbody>

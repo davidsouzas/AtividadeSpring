@@ -19,4 +19,10 @@ public class FilmeController {
 
         return "index";
     }
+    @RequestMapping("/new")
+    public String novoFilme(Model model){
+    Filme filme = new Filme();
+    model.addAttribute("filme", filme);
+    return "novo_filme";
+    }
 }
