@@ -17,7 +17,7 @@ public class Filme {
     private Float preco_da_locacao;
     private String duracao_do_filme;
     private Float custo_de_substituicao;
-    private Integer classificao;
+    private Integer classificacao;
     private Date ultima_atualizacao;
 
     protected Filme() {
@@ -97,12 +97,12 @@ public class Filme {
         this.custo_de_substituicao = custo_de_substituicao;
     }
 
-    public Integer getClassificao() {
-        return classificao;
+    public Integer getClassificacao() {
+        return classificacao;
     }
 
-    public void setClassificao(Integer classificao) {
-        this.classificao = classificao;
+    public void setClassificacao(Integer classificacao) {
+        this.classificacao = classificacao;
     }
 
     public Date getUltima_atualizacao() {

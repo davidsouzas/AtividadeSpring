@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Filmes</title>
 </head>
 <body>
+<div align="center">
+    <h1>Filmes</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Descrição</th>
+                <th>Ano de Lançamento</th>
+                <th>Idioma</th>
+                <th>Duração do Filme</th>
+                <th>Preço de Locação</th>
+                <th>Custo de Substituição</th>
+                <th>Classficação</th>
+                <th>Ultima Atualização</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr th:each="filme : ${listFilmes}">
+                <td th:text="${filme.titulo}">Titulo</td>
+                <td th:text="${filme.descricao}">Descrição</td>
+                <td th:text="${filme.ano_de_lancamento}">Ano de Lançamento</td>
+                <td th:text="${filme.idioma}">Idioma</td>
+                <td th:text="${filme.descricao}">Descrição</td>
+                <td th:text="${filme.descricao}">Descrição</td>
+                <td th:text="${filme.descricao}">Descrição</td>
+                <td th:text="${filme.descricao}">Descrição</td>
+                <td th:text="${filme.descricao}">Descrição</td>
+                <d></d>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
