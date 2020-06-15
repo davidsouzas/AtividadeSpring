@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:table="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Idioma</title>
+</head>
+<body>
+
+<div align="center">
+    <h1>Editar Idioma</h1>
+    <form action="#" th:action="@{/salvar}" th:object="${idioma}" method="post">
+        <table border="0" cellpadding="10">
+
+            <tr>
+                <td>ID:</td>
+                <td><input type="number" th:field="*{idioma_id}" readonly="readonly"/></td>
+            </tr>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" th:field="*{nome}"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Salvar</button></td>
+                <td><a href="/">Voltar</a></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

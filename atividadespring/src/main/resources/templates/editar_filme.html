@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:table="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Filme</title>
+</head>
+<body>
+
+<div align="center">
+    <h1>Editar Filme</h1>
+    <form action="#" th:action="@{/salvar}" th:object="${filme}" method="post">
+        <table border="0" cellpadding="10">
+
+            <tr>
+                <td>ID:</td>
+                <td><input type="number" th:field="*{filme_id}" readonly="readonly"/></td>
+            </tr>
+            <tr>
+                <td>Titulo:</td>
+                <td><input type="text" th:field="*{titulo}"/></td>
+            </tr>
+            <tr>
+                <td>Descrição:</td>
+                <td><input type="text" th:field="*{descricao}"/></td>
+            </tr>
+            <tr>
+                <td>Ano de Lançamento:</td>
+                <td><input type="number" th:field="*{ano_de_lancamento}"/></td>
+            </tr>
+            <tr>
+                <td>Idioma:</td>
+                <td><input type="number" th:field="*{idioma_id}"/></td>
+            </tr>
+            <tr>
+                <td>Duração do Filme (Em minutos):</td>
+                <td><input type="number" th:field="*{duracao_do_filme}"/></td>
+            </tr>
+            <tr>
+                <td>Preço de Locação:</td>
+                <td><input type="number" th:field="*{preco_da_locacao}"/></td>
+            </tr>
+            <tr>
+                <td>Custo de Substituição:</td>
+                <td><input type="number" th:field="*{custo_de_substituicao}"/></td>
+            </tr>
+            <tr>
+                <td>Classificação:</td>
+                <td><input type="number" th:field="*{classificacao}"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Salvar</button></td>
+                <td><a href="/">Voltar</a></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

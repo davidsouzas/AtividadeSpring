@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Idiomas</title>
 </head>
 <body>
+<div align="center">
+    <h1>Idiomas</h1>
 
+    <a href="new">Inserir Novo Idioma</a>
+    <br/>
+
+    <table border="1" cellpadding="10">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ultima Atualização</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="idioma : ${listIdiomas}">
+            <td th:text="${filme.titulo}">Nome</td>
+            <td th:text="${filme.ultima_atualizacao}">Ultima Atualização</td>
+            <td>
+                <a th:href="@{'/editar/' + ${filme.filme_id}}">Editar</a>
+                &nbsp;&nbsp;
+                <a th:href="@{'/delete/' + ${filme.filme_id}}">Excluir</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

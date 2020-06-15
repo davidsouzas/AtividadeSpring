@@ -39,7 +39,11 @@
                 <td th:text="${filme.custo_de_substituicao}">Custo de Substituição</td>
                 <td th:text="${filme.classificacao}">Classficação</td>
                 <td th:text="${filme.ultima_atualizacao}">Ultima Atualização</td>
-                <d></d>
+                <td>
+                    <a th:href="@{'/editar/' + ${filme.filme_id}}">Editar</a>
+                    &nbsp;&nbsp;
+                    <a th:href="@{'/delete/' + ${filme.filme_id}}">Excluir</a>
+                </td>
             </tr>
         </tbody>
     </table>
